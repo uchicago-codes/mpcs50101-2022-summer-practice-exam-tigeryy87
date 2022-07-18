@@ -7,7 +7,14 @@ def replace(original, replace, new):
     # Your code here
     #
 
-    return "something here"
+    new_str = ''
+    remove_space = original.split()
+    for word in remove_space:
+        if word == replace:
+            new_str += new
+        else:
+            new_str += word
+    return new_str
 
 
 
